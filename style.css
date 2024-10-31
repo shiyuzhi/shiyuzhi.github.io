@@ -61,12 +61,82 @@ nav ul li a:hover {
     margin: 20px 0; /* 上下邊距 */
 }
 
+
 .profile-image {
     max-width: 100%; /* 讓圖片不超過容器寬度 */
     height: auto; /* 保持圖片比例 */
     border-radius: 10px; /* 增加圓角效果 */
 }
 
+
+
+h2 {
+    margin: 0 20px; /* 左右各增加 20px 的邊距 */
+    text-align: center; 
+    padding-bottom: 20px; 
+}
+
+
+.article-container {
+    display: flex; /* 使用 flexbox 排列子項目 */
+    justify-content: center; /* 水平置中 */
+    flex-wrap: wrap; /* 允許換行 */
+    margin: 0 auto; /* 自動外邊距 */
+    max-width: 600px; 
+}
+
+.article-preview {
+    background-color: #e0f7fa; /* 淺色背景 */
+    border: 2px solid #00838f; /* 邊框顏色 */
+    border-radius: 8px; /* 圓角 */
+    padding: 10px; /* 內邊距 */
+    margin: 10px; /* 間距 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 平滑過渡效果 */
+    cursor: pointer; /* 游標變為指針 */
+    width: calc(45% - 20px); /* 寬度設為45%，考慮間距 */
+    aspect-ratio: 1 / 1; /* 保持正方形 */
+}
+
+.article-preview:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 增加阴影 */
+}
+
+
+footer {
+    background-color: #090202; /* 頁尾背景顏色 */
+    color: #fff; /* 字體顏色 */
+    text-align: center; /* 文字置中 */
+    margin-top: 50px; /* 減少頁尾距離上方內容的距離 */
+    padding: 10px 0; /* 減少上下內邊距 */
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* 使用細邊框 */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3); /* 減少陰影效果 */
+    font-size: 12px; /* 減小字體大小 */
+}
+
+footer a {
+    color: #fff; /* 連結顏色 */
+    text-decoration: none; /* 移除下劃線 */
+}
+
+footer a:hover {
+    text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
+}
+
+
+/* article */
+@media (max-width: 768px) {
+    .article-preview {
+        width: calc(45% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .article-preview {
+        width: calc(45% - 20px); 
+        max-width: 100%; 
+    }
+}
 
 /* 當螢幕寬度小於768px時 */
 @media (max-width: 768px) {
@@ -97,14 +167,4 @@ nav ul li a:hover {
         margin: 10px 0; /* 垂直間距 */
         text-align: center; /* 置中 */
     }
-}
-
-/* 頁尾樣式 */
-footer {
-    background-color: #333; /* 頁尾背景顏色 */
-    color: #fff; /* 字體顏色 */
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 10px; /* 上方邊距 */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
 }
