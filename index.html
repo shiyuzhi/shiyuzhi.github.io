@@ -2,45 +2,56 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/bear.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自我介紹 - 你的名字</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>yori</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="profile">
-            <img src="your-profile-pic.png" alt="個人頭像">
-            <h1>你的名字</h1>
-            <p>簡短的自我介紹或口號</p>
-        </div>
         <nav>
-            <ul>
-                <li><a href="#articles">文章</a></li>
-                <li><a href="#contact">聯絡我</a></li>
+            <!-- 三橫線 -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="nav-links"> 
+                <li><a href="#about">個人簡介</a></li>
+                <li><a href="#articles">文章列表</a></li>
+                <li><a href="#future">未來規劃</a></li>
+                <li><a href="#contact">關於此網站</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="articles">
-        <h2>最近的文章</h2>
-        <div class="articles">
-            <div class="article">
-                <h3>文章標題 1</h3>
-                <p>文章簡介...</p>
-                <a href="#">閱讀更多</a>
+    <main>
+        <section id="about">
+            <img src="images/bear.png" alt="王熊熊">
+            <p>頭像是胸毛公寓的王熊熊，作者為 <a href="https://www.instagram.com/mdzz3310/" target="_blank">mdzz3310</a>。</p>
+            <p>最近颱風天</p>
+            <p>最近更新時間: 2024/10/31</p>
+        </section>        
+        <section id="articles">
+            <h2>最近的文章</h2>
+            <div class="article-preview">
+                <h3>文章標題1</h3>
+                <p>文章摘要...</p>
             </div>
-            <div class="article">
-                <h3>文章標題 2</h3>
-                <p>文章簡介...</p>
-                <a href="#">閱讀更多</a>
+            <div class="article-preview">
+                <h3>文章標題2</h3>
+                <p>文章摘要...</p>
             </div>
-            <!-- 可以添加更多文章 -->
-        </div>
-        <button>顯示更多</button>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 你的名字</p>
+        <p>© 2024 yori</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links"); // 獲取導覽列
+            navLinks.classList.toggle("show"); // 切換顯示
+        }
+    </script>
 </body>
 </html>
