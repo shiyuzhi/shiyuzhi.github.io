@@ -1,0 +1,68 @@
+/* 基本樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #3498db; 
+    padding: 1rem;
+    color: white;
+    position: relative; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* 允許換行 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* 使菜單項目垂直排列 */
+        display: none; /* 預設隱藏菜單 */
+        width: 100%; /* 寬度為 100% */
+        background: #3498db; /* 菜單背景顏色 */
+        position: absolute; /* 絕對定位 */
+        top: 60px; /* 使菜單從導航欄下方開始 */
+        left: 0; /* 對齊左邊 */
+        z-index: 1000; /* 確保在最上層 */
+    }
+
+    nav ul.show {
+        display: flex; /* 點擊後顯示 */
+    }
+
+    nav .menu-icon {
+        display: block; /* 在小螢幕上顯示菜單圖標 */
+    }
+}
+
+footer {
+    text-align: center; /* 將文本置中 */
+    padding: 1rem; /* 添加內邊距以增加上下間距 */
+    background-color: #d0d4da; /* 可選：為頁腳添加背景顏色 */
+    margin-top: 2rem; /* 可選：為頁腳添加上邊距 */
+}
+
+/* 其他樣式 */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #3498db; 
+    padding: 1rem;
+    color: white;
+    position: relative; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu-icon {
+    display: none; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul#nav-links {
+    display: flex;
+}
+
+nav ul#nav-links.show {
+    display: flex; 
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* 隱藏菜單 */
+        width: 100%; 
+        background-color: #3498db; /* 與 header 顏色一致 */
+        position: absolute; /* 絕對定位 */
+        top: 100%; /* 在 header 之下 */
+        left: 0; 
+        z-index: 1000; /* 確保在其他元素之上 */
+    }
+
+    nav ul.show {
+        display: flex; /* 顯示菜單 */
+    }
+
+    nav .menu-icon {
+        display: block; /* 顯示漢堡圖示 */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* 調整菜單項目間距 */
+        text-align: center; /* 中央對齊 */
+    }
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 添加 hover 效果 */
+nav ul li a:hover {
+    text-decoration: underline; /* 滑鼠懸停下的下劃線 */
+}
