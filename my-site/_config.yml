@@ -21,8 +21,8 @@
 title: "Yori的個人網站"                     # 網站標題
 email: "shiy09706@gmail.com"               # 電子郵件
 description: "這是我的個人網站，分享我的想法和作品。"  # 網站描述
-baseurl: "/my-site"                        # 網站的子路徑
-url: "https://shiyuzhi.github.io"          # 基礎 URL
+baseurl: ""                        # 網站的子路徑
+url: "https://shiyuzhi.github.io/my-site"          # 基礎 URL
 theme: minima                               # 使用的主題
 plugins:                                    # 使用的插件
   - jekyll-feed
@@ -30,8 +30,6 @@ exclude:                                    # 排除不必要的資料夾和檔�
   - .sass-cache/
   - .jekyll-cache/
   - node_modules/
-
-twitter_username: jekyllrb
 github_username:  shiyuzhi
 
 # Build settings
