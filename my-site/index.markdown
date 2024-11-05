@@ -5,7 +5,7 @@ description: 歡迎來到我的個人網站
 ---
 
 <section id="about">
-    <img src="/images/bear.png" alt="王熊熊" />
+    <img src="{{ '/images/bear.png' | relative_url }}" alt="王熊熊" />
     <p>頭像是胸毛公寓的王熊熊，作者為 <a href="https://www.instagram.com/mdzz3310/" target="_blank">mdzz3310</a>。</p>
     <p>Hi, I am Yori。這是我的個人網站。</p>
     <p>最近颱風天。</p>
