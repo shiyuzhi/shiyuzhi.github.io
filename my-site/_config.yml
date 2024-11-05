@@ -1,8 +1,8 @@
 title: "Yori的個人網站"                     # 網站標題
 email: "shiy09706@gmail.com"               # 電子郵件
 description: "這是我的個人網站，分享我的想法和作品。"  # 網站描述
-baseurl: ""                        # 網站的子路徑
-url: "https://shiyuzhi.github.io/my-site"          # 基礎 URL
+baseurl: "/my-site"                        # 網站的子路徑
+url: "https://shiyuzhi.github.io"          # 基礎 URL
 theme: minima                               # 使用的主題
 plugins:                                    # 使用的插件
   - jekyll-feed
@@ -10,29 +10,4 @@ exclude:                                    # 排除不必要的資料夾和檔�
   - .sass-cache/
   - .jekyll-cache/
   - node_modules/
-github_username:  shiyuzhi
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the exclude: key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the include: list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+github_username: shiyuzhi
