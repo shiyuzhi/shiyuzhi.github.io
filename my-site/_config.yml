@@ -1,21 +1,14 @@
-title: "Yori的個人網站"                     # 網站標題
-email: "shiy09706@gmail.com"               # 電子郵件
+title: "Yori的個人網站"  # 網站標題
+email: "shiy09706@gmail.com"  # 電子郵件
 description: "這是我的個人網站，分享我的想法和作品。"  # 網站描述
-url: "https://shiyuzhi.github.io"
-baseurl: ""  # 留空，表示網站位於根目錄
-         # 基礎 URL
-theme: minimal-mistakes-jekyll
-         # 使用的遠端主題
-plugins:                                   
+baseurl: ""  # 基礎 URL，如果網站位於根目錄
+url: "https://shiyuzhi.github.io"  # 你的 GitHub Pages 網址
+theme: "minimal-mistakes"  # 使用的遠端主題
+plugins:
   - jekyll-feed
-  - jekyll-remote-theme                    # 加入 jekyll-remote-theme 外掛
-exclude:                                    # 排除不必要的資料夾和檔案
+  - jekyll-remote-theme  # 加入 jekyll-remote-theme 外掛
+exclude:
   - .sass-cache/
   - .jekyll-cache/
   - node_modules/
 github_username: shiyuzhi
-
-
-
-
-
