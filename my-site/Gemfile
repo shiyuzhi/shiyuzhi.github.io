@@ -4,7 +4,6 @@ source "https://rubygems.org"
 # 指定 Jekyll 版本
 gem "jekyll", "~> 4.3.4"
 
-# Minima 主題（如果不再使用，可以刪除）
 gem "minimal-mistakes-jekyll"
 
 # 插件區塊，包含 jekyll-feed 和 jekyll-remote-theme
