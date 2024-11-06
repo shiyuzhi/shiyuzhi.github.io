@@ -3,11 +3,18 @@ email: "shiy09706@gmail.com"               # 電子郵件
 description: "這是我的個人網站，分享我的想法和作品。"  # 網站描述
 baseurl: ""                        # 網站的子路徑
 url: "https://shiyuzhi.github.io"          # 基礎 URL
-theme: minima                               # 使用的主題
-plugins:                                    # 使用的插件
+theme: minimal-mistakes-jekyll
+         # 使用的遠端主題
+plugins:                                   
   - jekyll-feed
+  - jekyll-remote-theme                    # 加入 jekyll-remote-theme 外掛
 exclude:                                    # 排除不必要的資料夾和檔案
   - .sass-cache/
   - .jekyll-cache/
   - node_modules/
 github_username: shiyuzhi
+
+
+
+
+
