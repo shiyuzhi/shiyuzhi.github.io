@@ -1,8 +1,9 @@
 title: "Yori的個人網站"                     # 網站標題
 email: "shiy09706@gmail.com"               # 電子郵件
 description: "這是我的個人網站，分享我的想法和作品。"  # 網站描述
-baseurl: ""                        # 網站的子路徑
-url: "https://shiyuzhi.github.io"          # 基礎 URL
+url: "https://shiyuzhi.github.io"
+baseurl: ""  # 留空，表示網站位於根目錄
+         # 基礎 URL
 theme: minimal-mistakes-jekyll
          # 使用的遠端主題
 plugins:                                   
